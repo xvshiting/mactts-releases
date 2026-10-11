@@ -1,5 +1,7 @@
 # MacTTS 0.4.0 安装与模型指南
 
+[产品页](https://xvshiting.github.io/mactts-releases/) · [Sites 产品页](https://mactts.early-flame-4706.chatgpt.site) · [下载 DMG](https://github.com/xvshiting/mactts-releases/releases/latest)
+
 适用于 Apple Silicon（M 系列）Mac。构建最低系统版本为 macOS 14；目前实机验证在开发者当前系统完成，尚未逐一验证所有旧版本系统。Intel Mac 不支持此安装包。
 
 ## 1. 安装应用
