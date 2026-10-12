@@ -1,4 +1,4 @@
-# MacTTS 0.4.0 安装与模型指南
+# MacTTS 0.4.1 安装与模型指南
 
 [产品页](https://xvshiting.github.io/mactts-releases/) · [Sites 产品页](https://mactts.early-flame-4706.chatgpt.site) · [下载 DMG](https://github.com/xvshiting/mactts-releases/releases/latest)
 
@@ -6,7 +6,7 @@
 
 ## 1. 安装应用
 
-从 https://github.com/xvshiting/mactts-releases/releases/latest 下载 `MacTTS-0.4.0-arm64.dmg`，打开后将 MacTTS.app 拖到 Applications（应用程序），再从应用程序启动。
+从 https://github.com/xvshiting/mactts-releases/releases/latest 下载 `MacTTS-0.4.1-arm64.dmg`，打开后将 MacTTS.app 拖到 Applications（应用程序），再从应用程序启动。
 
 这是早期测试版，使用 ad-hoc 签名，尚未经过 Apple 公证。若系统提示无法验证开发者，先尝试打开一次，然后在「系统设置 → 隐私与安全性」中找到 MacTTS，按系统提供的「仍要打开」流程操作。只针对你确认下载来源的 MacTTS 操作，无需关闭系统 Gatekeeper。官方说明：https://support.apple.com/zh-cn/102445 。如果提示文件损坏，先重新下载并校验 SHA-256；若仍失败，请提交系统版本、错误截图和日志。
 
@@ -61,6 +61,8 @@ https_proxy="http://127.0.0.1:你的端口" \
 离线迁移：将已经完整下载的 `~/Library/Caches/NeMoSpeech/models/` 整个目录复制到另一台 Mac 的相同位置，保留仓库名、固定修订目录及其文件结构。不要混合不同模型版本的资源。
 
 ## 3. CLI 与 MCP（可选）
+
+0.4.1 已修复中文数字被跳过的问题。中文和英文数字会在本机先转换为读法，再进入模型；日期、年份、小数、百分比、验证码等常见格式可直接输入。其他语言仍使用原引擎处理。复杂公式或有歧义的编号，建议写成明确的朗读文字。显示和历史记录保留原文。
 
 无需安装额外工具，可直接运行应用内 CLI：
 
